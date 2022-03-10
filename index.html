@@ -1,42 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Jamie Vos</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <title>Jamie Vos</title>
 </head>
+
 <body>
-    <nav>
-        <a href="#">Projects</a>
-        <a href="#">About me</a>
-    </nav>
-    <header class="v-header container">
-      <div class="fullscreen-video-wrap">
-          <video src="Scrolling_Code_Trim.mp4" type="video/mp4" autoplay="autoplay" loop="true" muted="true"></video>
-      </div>
-      <div class="header-overlay"></div>
-      <div class="header-content">
-          <h1>Hello Everyone</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tenetur, perspiciatis temporibus sapiente in alias? Voluptates non accusantium blanditiis doloribus.</p>
-          <a href="#" class="btn">Read More</a>
-      </div>
-    </header>
 
-  <section class="section section-a">
+  <div class="loader-bg">
+    <div class="loader">
+      <div class="dots"></div>
+      <div class="dots"></div>
+      <div class="dots"></div>
+      <div class="dots"></div>
+      <div class="dots"></div>
+    </div>
+  </div>
+
+  <header class="header container">
+    <div class="fullscreen-video-wrap">
+      <video src="Laptop_1_Videvo.mov" type="video/mp4" autoplay="autoplay" loop="true" muted="true"></video>
+    </div>
+    <div class="header-overlay"></div>
+    <div class="header-content">
+      <h1>Hello World!</h1>
+      <p>Hello, I'm Jamie, a 2004 child and like many born of the generation, my relationship with coding started the
+        day I was born. In this portfolio, I document my journey into coding.</p>
+      <a href='#section-1' class="btn">Read More</a>
+    </div>
+  </header>
+
+  <section class="section section-a" id="section-1">
     <div class="container">
-      <h1>Section A</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit necessitatibus facere quos consequuntur asperiores mollitia quisquam architecto quidem sint, libero, veniam inventore non illo doloremque molestiae. Repellat esse ipsam, similique reiciendis neque quam qui impedit dicta deserunt eos maiores nam reprehenderit iure nostrum magni molestiae tempora, voluptatum libero labore soluta.</p>
+      <h1>About Me</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit necessitatibus facere quos consequuntur
+        asperiores mollitia quisquam architecto quidem sint, libero, veniam inventore non illo doloremque molestiae.
+        Repellat esse ipsam, similique reiciendis neque quam qui impedit dicta deserunt eos maiores nam reprehenderit
+        iure nostrum magni molestiae tempora, voluptatum libero labore soluta.</p>
     </div>
   </section>
 
-  <section class="section section-b">
+  <section class="section section-b" id="section-2">
     <div class="container">
-        <h1>Section B</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit necessitatibus facere quos consequuntur asperiores mollitia quisquam architecto quidem sint, libero, veniam inventore non illo doloremque molestiae. Repellat esse ipsam, similique reiciendis neque quam qui impedit dicta deserunt eos maiores nam reprehenderit iure nostrum magni molestiae tempora, voluptatum libero labore soluta.</p>
+      <h1>Projects</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit necessitatibus facere quos consequuntur
+        asperiores mollitia quisquam architecto quidem sint, libero, veniam inventore non illo doloremque molestiae.
+        Repellat esse ipsam, similique reiciendis neque quam qui impedit dicta deserunt eos maiores nam reprehenderit
+        iure nostrum magni molestiae tempora, voluptatum libero labore soluta.</p>
     </div>
   </section>
 
+  <section class="section section-c" id="section-3">
+    <div class="container">
+      <h1>Skills</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit necessitatibus facere quos consequuntur
+        asperiores mollitia quisquam architecto quidem sint, libero, veniam inventore non illo doloremque molestiae.
+        Repellat esse ipsam, similique reiciendis neque quam qui impedit dicta deserunt eos maiores nam reprehenderit
+        iure nostrum magni molestiae tempora, voluptatum libero labore soluta.</p>
+    </div>
+  </section>
+
+  <section class="section section-d" id="section-4">
+    <div class="container">
+      <h1>Contact</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit necessitatibus facere quos consequuntur
+        asperiores mollitia quisquam architecto quidem sint, libero, veniam inventore non illo doloremque molestiae.
+        Repellat esse ipsam, similique reiciendis neque quam qui impedit dicta deserunt eos maiores nam reprehenderit
+        iure nostrum magni molestiae tempora, voluptatum libero labore soluta.</p>
+    </div>
+  </section>
+
+  <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    setTimeout(function () {
+      $('.loader-bg').fadeToggle();
+    }, 1500);
+  </script>
 </body>
+
 </html>

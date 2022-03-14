@@ -13,6 +13,35 @@ body {
     overflow-x: hidden;
 }
 
+.title {
+    color: white;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: transparent;
+    padding: 36px 32px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
 .header {
     height: 100vh;
     display: flex;
@@ -196,4 +225,47 @@ body {
     line-height: 50px;
     color: white;
     font-size: 22px;
+}
+
+main {
+    /* position: fixed; */
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.slider {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 2800px;
+    height: 100%;
+}
+
+.slider-inner {
+    position: absolute;
+    top: 15%;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.item {
+    position: relative;
+    width: 400px;
+    height: 100%;
+    overflow: hidden;
+    background-color: red;
+}
+
+.img {
+    position: absolute;
+    left: -100px;
+    width: 600px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
 }

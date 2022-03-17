@@ -95,11 +95,12 @@ nav {
 
 .header-content {
     z-index: 2;
+    margin-bottom: 50px;
 }
 
 .header-content h1 {
     font-size: 42px;
-    margin-bottom: 0;
+    margin-bottom: 10;
 }
 
 .header-content p {

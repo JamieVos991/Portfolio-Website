@@ -10,22 +10,19 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     color: #333;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-.title {
-    color: white;
-    font-size: 28px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
+
+/* Nav */
 
 nav {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
     z-index: 99;
     background-color: transparent;
     padding: 36px 32px;
@@ -34,12 +31,26 @@ nav {
 .menu {
     display: flex;
     justify-content: space-around;
+    width: 75%;
 }
 
 .menu a {
     color: white;
     text-decoration: none;
     font-size: 16px;
+}
+
+/* Nav einde */
+
+
+/* Header */
+
+.title {
+    color: white;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .header {
@@ -106,6 +117,11 @@ nav {
     border-radius: 5px;
 }
 
+/* Header einde */
+
+
+/* Sections */
+
 .section {
     padding: 20px 0;
 }
@@ -113,16 +129,16 @@ nav {
 .section-a {
     height: 100vh;
     width: 100vw;
-    background: #333;
-    color: white;
+    background: white;
+    color: #333;
     top: 0;
     left: 0;
     z-index: 1;
 }
 
 .section-b {
-    background: white;
-    color: #333;
+    background: #333;
+    color: white;
     height: 100vh;
     width: 100vw;
     top: 0;
@@ -159,15 +175,18 @@ nav {
     z-index: 1;
 } 
 
-
-
-
-@media(max-width: 960px) {
-    .container {
-        padding-right: 3rem;
-        padding-left: 3rem;
-    }
+.socials-title {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: 130px;
 }
+
+/* Sections einde */
+
+
+/* Loading screen */
 
 .loader-bg{
     position: fixed;
@@ -225,6 +244,11 @@ nav {
     }
 }
 
+/* Loading screen einde */
+
+
+/* Go to top button */
+
 .gotopbtn {
     position: fixed;
     width: 50px;
@@ -239,6 +263,11 @@ nav {
     color: white;
     font-size: 22px;
 }
+
+/* Go to top button einde */
+
+
+/* Social media tab */
 
 ul {
     position: absolute;
@@ -373,3 +402,17 @@ ul li:hover:nth-child(4) a::before {
 ul li:hover:nth-child(4) a:after {
     background: #2867B2;;
 }
+
+/* Social media tab einde */
+
+
+/* Media querries */
+
+@media(max-width: 960px) {
+    .container {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
+
+/* Media querries einde */

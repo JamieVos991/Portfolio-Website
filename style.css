@@ -155,7 +155,17 @@ nav {
     top: 0;
     left: 0;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.title-skill {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
 .section-d {
     background: white;
     color: #333;
@@ -175,6 +185,44 @@ nav {
     left: 0;
     z-index: 1;
 } 
+
+.circles {
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    position: absolute;
+    color: red;
+}
+
+.circle-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.circle-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.circle-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    border-radius: 50%;
+}
 
 .socials-title {
     display: flex;

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,12 +17,21 @@
 <body>
 
   <nav>
+    <div class="openMenu"><i class="fa fa-bars"></i></div>
     <div class="menu">
+      <a href="#">Home</a>
       <a href='#section-1'> About Me </a>
       <a href='#section-2'> Projects </a>
       <a href='#section-3'> Skills </a>
       <a href='#section-4'> Blogs </a>
       <a href='#section-5'> Contact </a>
+      <div class="closeMenu"><i class="fa fa-times"></i></div>
+      <span class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-github"></i>
+    </span>
     </div>
   </nav>
 
@@ -123,6 +133,7 @@
   <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js"></script>
   <script>
     setTimeout(function () {
       $('.loader-bg').fadeToggle();

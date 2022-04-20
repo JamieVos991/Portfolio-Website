@@ -266,7 +266,7 @@ nav .menu .closeMenu , .home {
     top: 0;
     left: 0;
     z-index: 1;
-    overflow: auto;
+    overflow: auto; 
 }
 
 .section-c {
@@ -277,16 +277,8 @@ nav .menu .closeMenu , .home {
     top: 0;
     left: 0;
     z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
-}
+    overflow: auto; 
 
-.title-skill {
-    display: flex;
-    justify-content: center;
-    margin-top: 200px;
 }
 
 .section-d {
@@ -297,7 +289,7 @@ nav .menu .closeMenu , .home {
     top: 0;
     left: 0;
     z-index: 1;
-    overflow: auto;
+    overflow: auto; 
 }
 
 .section-e {
@@ -308,56 +300,9 @@ nav .menu .closeMenu , .home {
     top: 0;
     left: 0;
     z-index: 1;
-    overflow: auto;  
+    overflow: auto;   
     padding-bottom: 100px;
 } 
-
-.circles {
-    display: flex;
-    justify-content: space-around;
-    width: 75%;
-    position: absolute;
-    color: white;
-    font-size: 200px;
-}
-
-.circle-1 {
-    display: flex;
-    justify-content: center;
-    width: 350px;
-    height: 350px;
-    background-color: #212121;
-    border-radius: 50%; 
-    box-shadow: black 5px 5px 5px;
-}
-
-.circle-2 {
-    display: flex;
-    justify-content: center;
-    width: 350px;
-    height: 350px;
-    background-color: #212121;
-    border-radius: 50%;
-    box-shadow: black 5px 5px 5px;
-}
-
-.circle-3 {
-    display: flex;
-    justify-content: center;
-    width: 350px;
-    height: 350px;
-    background-color: #212121;
-    border-radius: 50%;
-    box-shadow: black 5px 5px 5px;
-}
-
-.socials-title {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    font-weight: 100;
-    margin-top: 120px;
-}
 
 /* Sections einde */
 
@@ -513,8 +458,8 @@ nav .menu .closeMenu , .home {
   }
   
   .contact form button:hover,.contact form button:focus{
-    background:#212121;
-    color:#fff;
+    background:white;
+    color:black;
     outline:0;
     transition: background-color 2s ease-out;
   }
@@ -648,7 +593,8 @@ nav .menu .closeMenu , .home {
 
 .about .content img{
     height: auto;
-    width: 600px;
+    width: 400px;
+    border-radius: 50%;
     max-width: 100%;
 }
 
@@ -669,7 +615,7 @@ nav .menu .closeMenu , .home {
 }
 
 .text h1 {
-    color: #ffcc74;
+    color: #546FFF;
     font-size: 85px;
     margin-bottom: 20px;
     text-transform: capitalize;
@@ -692,8 +638,8 @@ nav .menu .closeMenu , .home {
 }
 
 button {
-    background-color: #ffcc74;
-    color: black;
+    background-color: #546FFF;
+    color: white;
     border: 2px solid transparent;
     text-decoration: none;
     padding: 10px 30px;
@@ -732,3 +678,78 @@ button:hover {
     }
 }
     
+.section-c {
+    font-family: 'Poppins', sans-serif;
+}
+
+section > header {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding: 24px;
+    color: whites
+}
+
+section .skill {
+    display: grid;
+    grid-gap: 16px;
+    padding: 16px;
+    max-width: 1024px;
+    margin-inline: auto;
+    margin-top: 70px;
+}
+
+@media screen and (min-width: 600px) {
+    .skill {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .skill {
+        grid-template-columns: 1fr;
+    }
+
+    .section-c .skill {
+         margin-top: 20px;
+    }
+}
+
+.skill .set {
+    background-color: #212121;
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.skill .set:hover {
+    box-shadow: 0px 12px 16px 36363624;
+}
+
+.set span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 48px;
+    background-color: #546FFF;
+    color: white;
+    border-radius: 20%;
+    margin-inline: auto;
+}
+
+.set > header {
+    padding-block: 24px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    text-transform: ;
+}
+
+.set .list {
+    padding-block: 8px;
+    display: grid;
+    grid-template-columns: 1fr 28px;
+    text-transform: uppercase;
+}

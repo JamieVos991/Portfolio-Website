@@ -146,6 +146,17 @@ nav .menu .closeMenu , .home {
     padding-bottom: 2rem;
 }
 
+.italic {
+    font-style: italic;
+}
+
+.p-curl {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
 .btn {
     background: #546FFF;
     color: white;

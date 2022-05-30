@@ -1,0 +1,76 @@
+.project-tile {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 16/9;
+    box-shadow: 2px 2px 5px black;
+    border: 1px solid black;
+    transition: 0.3s ease-in-out;
+  }
+  .project-tile img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    opacity: 0;
+    background-color: black;
+    font-size: 20px;
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .project-tile:hover .project-desc {
+    opacity: 0.8;
+    z-index: 2;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1920px;
+    flex-wrap: wrap;
+    margin: 130px auto;
+    gap: 50px;
+  }
+  
+  .project-tile:hover {
+    box-shadow: 5px 5px 10px black;
+    transform: scale(1.05);
+  }
+  
+  .view-project-button {
+    border-radius: 5px;
+    color: white;
+    border: 2px solid white;
+    width: relative;
+    font-size: 15px;
+    height: auto;
+    padding: 7px;
+    margin: 0 auto;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .view-project-button:hover{
+    background-color: white;
+    color: black !important;
+    text-decoration: none;
+  }
+
+  #projects > .text-wrapper {
+    margin: 0 auto;
+    text-align: left; 
+  } 

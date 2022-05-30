@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="70955320.png" type="image/x-icon" />
+  <link rel="stylesheet" href="Css/style.css">
+  <link rel="shortcut icon" href="Foto's/70955320.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
     integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <title>Jamie Vos</title>
 </head>
@@ -21,61 +21,74 @@
 <body>
 
 
-  <nav class="navbar">
-    <ul>
-      <!-- <li class="navbar-logo"></li> -->
-      <!-- <li class="navbar-toggle"><i class="fas fa-bars fa-2x"></i></li> -->
-      <li class="navbar-links"><a href='#About'>About</a></li>
-      <li class="navbar-links"><a href="#">Projects</a></li>
-      <li class="navbar-links"><a href="#">Blog</a></li>
-      <li class="navbar-links"><i class="fa fa-github fa-2x"></i></li>
-      <li class="navbar-links"><i class="fa fa-linkedin fa-2x"></i></li>
-
+  <input type="checkbox" name="" id="menuBtn">
+  <div class="menu_overlay">
+    <label for="menuBtn">
+      <i class="fas fa-times"></i>
+    </label>
+    <ul class="list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#">Blog</a></li>
     </ul>
-  </nav>
+  </div>
+  <div class="landing_page">
+    <div class="menu">
+      <label for="menuBtn">
+        <i class="fas fa-bars"></i>
+      </label>
+    </div>
+  </div>
 
 
   <header class="header container">
     <div class="fullscreen-video-wrap">
-      <video src="../Foto's/Walking Around The Forest.mp4" type="video/mp4" autoplay="autoplay" loop="true" muted="true"></video>
+      <video src="Foto's/Walking Around The Forest.mp4" type="video/mp4" autoplay="autoplay" loop="true"
+        muted="true"></video>
     </div>
     <div class="header-overlay"></div>
     <div class="header-content">
-      
+
       <h1>Hello stranger... <br>Its okay, you can<br> scroll down. <span>🎃</span></h1>
       <!-- <p> <span class="p-curl">{</span> <span class="italic">I'm Jamie, a 2004 child and like many born of the generation, my relationship with coding started the
         day I was born.<br> In this portfolio, I document my journey into coding. </span> <span class="p-curl"> } </span> </p> -->
     </div>
 
-    
+
   </header>
 
-  <section class="section section-a" id="About" >
+  <section class="section section-a" id="About">
 
     <section class="about">
-      
+
       <div class="content show" data-aos="zoom-in">
-        <img src="../Foto's/a.JPG">
+        <img src="Foto's/a.JPG">
         <div class="text">
           <h1>About Me</h1>
           <h5>Developer & Designer</h5>
-          <p>My name is Jamie and I am a web developer specialized in front-end applications. I started web development in 2018 and acquired a strong knowledge and expertise in this field over time. 
-            Web applications, building websites and building apps are subjects that i can work good with. I do my best to improve myself in these fields but I also try to open my perspective to other domains. 
-          <br>
-          <br>
-          What am i looking for?
-          <br>
-          Challenge motivates me. Even if I have mainly worked on CSS and JS applications, I crave opportunities to discover new technologies and concepts.
-        <br><br>
-        I love learning. If you use programming languages or tools that I have not already mastered, I probably already heard about it and I definitely am confident that I can quickly become proficient with it.
-        <br><br>
-        I am interested in various topics. Pure development, architecture and clean code, scalability and performance concerns, monitoring and SRE are all topics that I am interested in. And there are a lot more! 
+          <p>My name is Jamie and I am a web developer specialized in front-end applications. I started web development
+            in 2018 and acquired a strong knowledge and expertise in this field over time.
+            Web applications, building websites and building apps are subjects that i can work good with. I do my best
+            to improve myself in these fields but I also try to open my perspective to other domains.
+            <br>
+            <br>
+            What am i looking for?
+            <br>
+            Challenge motivates me. Even if I have mainly worked on CSS and JS applications, I crave opportunities to
+            discover new technologies and concepts.
+            <br><br>
+            I love learning. If you use programming languages or tools that I have not already mastered, I probably
+            already heard about it and I definitely am confident that I can quickly become proficient with it.
+            <br><br>
+            I am interested in various topics. Pure development, architecture and clean code, scalability and
+            performance concerns, monitoring and SRE are all topics that I am interested in. And there are a lot more!
           </p>
 
         </div>
       </div>
-    </section> 
-  </section> 
+    </section>
+  </section>
 
   <section class="section section-b" id="section-2">
     <div class="container" data-aos="fade-right">
@@ -122,28 +135,23 @@
         </div>
       </div>
     </div>
-    
+
   </section>
 
 
-  <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a> 
+  <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="app.js"></script>
+  <script src="Js/app.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
- 
-  <!-- <script>
-    setTimeout(function () {
-      $('.loader-bg').fadeToggle();
-    }, 1500);
-  </script> -->
 
-    <script>
-      AOS.init({
-        duration: 3000,
-        once: true,
-      });
-    </script>
+
+  <script>
+    AOS.init({
+      duration: 3000,
+      once: true,
+    });
+  </script>
 
 </body>
 

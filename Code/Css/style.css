@@ -486,19 +486,19 @@ button:hover {
     animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
   }
   .bar .progress-line.html span{
-    width: 90%;
+    width: 85%;
   }
   .bar .progress-line.css span{
-    width: 60%;
+    width: 80%;
   }
   .bar .progress-line.jquery span{
-    width: 85%;
+    width: 55%;
   }
   .bar .progress-line.python span{
     width: 50%;
   }
   .bar .progress-line.mysql span{
-    width: 75%;
+    width: 40%;
   }
   .progress-line span::before{
     position: absolute;
@@ -533,18 +533,18 @@ button:hover {
     }
   }
   .progress-line.html span::after{
-    content: "90%";
+    content: "85%";
   }
   .progress-line.css span::after{
-    content: "60%";
+    content: "80%";
   }
   .progress-line.jquery span::after{
-    content: "85%";
+    content: "55%";
   }
   .progress-line.python span::after{
     content: "50%";
   }
   .progress-line.mysql span::after{
-    content: "75%";
+    content: "40%";
   }
   

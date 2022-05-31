@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap');
+
+
 * {
     scroll-behavior: smooth;
 }
@@ -38,7 +41,6 @@ body {
 
 .list {
   height: 40%;
-  font-family: Arial, Helvetica, sans-serif;
   width: 40%;
   position: relative;
   list-style: none;
@@ -47,33 +49,34 @@ body {
 .list li {
   height: 50%;
   width: 50%;
-  padding: 4px;
+  padding: 1px;
   position: absolute;
   display: flex;
   justify-content: center;
+  font-family: 'Tiro Telugu', serif;
   align-items: center;
   transition: all 0.4s ease;
 }
 
-.list li:nth-child(1) {
+.list li:nth-child(1) {    /* Home */
   top: 0;
   left: 0;
   background-color: #212121;
 }
 
-.list li:nth-child(2) {
+.list li:nth-child(2) {   /* Projects */
   bottom: 0;
   left: 0;
-  background-color: rgb(255, 102, 0);
+  background-color: #333;
 }
 
-.list li:nth-child(3) {
+.list li:nth-child(3) {    /* Blog */
   top: 0;
   right: 0;
-  background-color: rgb(255, 102, 0);
+  background-color: #333;
 }
 
-.list li:nth-child(4) {
+.list li:nth-child(4) {   /* Contact */
   bottom: 0;
   right: 0;
   background-color: #212121;
@@ -128,7 +131,7 @@ body {
 }
 
 .list a {
-  font-size: 1.35rem;
+  font-size: 1.9rem;
   text-decoration: none;
   color: #fff;
 }
@@ -142,6 +145,7 @@ body {
   transition: all 0.3s ease;
   z-index: 100;
 }
+
 .menu_overlay .fas:hover {
   color: rgb(255, 102, 0);
   transform: scale(1.1) rotate(180deg);
@@ -176,7 +180,6 @@ body {
   color: rgb(255, 102, 0);
 }
 
-
 /* Nav einde */
 
 
@@ -188,7 +191,6 @@ body {
     height: 100vh;
     color: #fff;
 }
-
 
 .header-content {
     z-index: 99;
@@ -202,6 +204,7 @@ body {
 h1 span {
     font-size: 40px;
 }
+
 .header-content h1 {
     font-size: 60px;
     text-align: center;
@@ -273,8 +276,11 @@ h1 span {
   font-family: 'Poppins', sans-serif;
   color: white;
   z-index: -1;
-  background-color: darkslategrey;
+  background-color: black;
+  display: flex;
+  justify-content: center;
 }
+
 
 
 /* Sections einde */
@@ -380,6 +386,104 @@ button:hover {
 
 
 
+
+:root{
+  --background-dark: #2d3548;
+  --text-light: rgba(255,255,255,0.6);
+  --text-lighter: rgba(255,255,255,0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
+
+
+.hero-section{
+  align-items: flex-start;
+  background-color: black;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+}
+
+@media(min-width: 540px){
+  .card-grid{
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media(min-width: 960px){
+  .card-grid{
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
+
+.card{
+  list-style: none;
+  position: relative;
+}
+
+.card:before{
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+
+.card__background{
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: 
+    filter 200ms linear,
+    transform 200ms linear;
+}
+
+.card:hover .card__background{
+  transform: scale(1.05) translateZ(0);
+}
+
+.card__content{
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+}
+
+.card__category{
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-s);
+  text-transform: uppercase;
+}
+
+.card__heading{
+  color: var(--text-lighter);
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  word-spacing: 100vw;
+}
 
 
 
@@ -501,7 +605,83 @@ button:hover {
     content: "40%";
   }
   
+
+  /* Contact form */
+
+  form { 
+    max-width:420px; 
+    margin:50px auto; 
+    position: absolute;
+    top: 345%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .feedback-input {
+    color:white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid rgb(255, 102, 0);
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+  }
   
+  .feedback-input:focus { border:2px solid #CC4949; }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+  
+  [type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background:rgb(255, 102, 0);;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+  }
+  [type="submit"]:hover { background:rgb(255, 102, 0); }
+
+  /* Contact form einde */
+  
+
+  /* Footer */
+
+  
+  footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    height: 80px;
+    color: white;
+  }
+
+  footer .container {
+    padding: 30px;
+    font-size: 20px;
+  }
+
+  /* Footer einde */
+
+
   /* Media queries */
 
   @media screen and (max-width: 750px) and (min-width: 651px) {
@@ -566,6 +746,19 @@ button:hover {
       color: white;
       z-index: -1;
       background-color: black;
+    }
+
+    .section-e {
+      height: 80vh;
+      width: 100vw;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      z-index: -1;
+      background-color: black;
+    }
+
+    form {
+      top: 425%;
     }
 }
 

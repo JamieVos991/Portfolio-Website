@@ -177,36 +177,6 @@ body {
 }
 
 
-@media screen and (max-width: 750px) and (min-width: 651px) {
-  .list li a {
-    font-size: 1.4rem;
-  }
-
-  .list {
-    height: 30%;
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .list li {
-    margin-bottom: 10px;
-    position: relative;
-  }
-
-  .list a {
-    font-size: 1.4rem;
-  }
-}
-
 /* Nav einde */
 
 
@@ -306,6 +276,7 @@ h1 span {
   background-color: darkslategrey;
 }
 
+
 /* Sections einde */
 
 
@@ -330,18 +301,6 @@ h1 span {
 /* Go to top button einde */
 
 
-
-@media (max-width: 600px) {
-
-
-  .navbar-links {
-    display: none;
-  }
-
-    .header-content h1 {
-        font-size: 40px;
-    }
-}
 
 
 
@@ -421,29 +380,7 @@ button:hover {
 
 
 
-@media screen and (max-width: 1180px) {
-    .about {
-        width: 100%;
-        height: auto;
-        padding: 70px 0px;
-    }
 
-    .about img {
-        margin-top: 20px;
-    }
-
-    .section-b .container {
-        margin-top: -200px;
-    }
-}
-
-
-@media screen and (max-width: 650px) {
-    .text h1 {
-        font-size: 60px;
-        margin-bottom: 25px;
-    }
-}
 
 
 .skill-bars{
@@ -564,3 +501,72 @@ button:hover {
     content: "40%";
   }
   
+  
+  /* Media queries */
+
+  @media screen and (max-width: 750px) and (min-width: 651px) {
+    .list li a {
+      font-size: 1.4rem;
+    }
+  
+    .list {
+      height: 30%;
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+
+      .header-content h1 {
+          font-size: 40px;
+      }
+  }
+
+  @media screen and (max-width: 650px) {
+
+    .text h1 {
+        font-size: 60px;
+        margin-bottom: 25px;
+    }
+    
+    .list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .list li {
+      margin-bottom: 10px;
+      position: relative;
+    }
+  
+    .list a {
+      font-size: 1.4rem;
+    }
+}
+
+  @media screen and (max-width: 1180px) {
+
+    .about {
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+
+    .about img {
+        margin-top: 20px;
+    }
+
+    .section-d {
+      height: 80vh;
+      width: 100vw;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      z-index: -1;
+      background-color: black;
+    }
+}
+
+  /* Media queries einde*/

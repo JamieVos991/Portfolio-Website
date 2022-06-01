@@ -266,7 +266,7 @@ h1 span {
     left: 0;
     background-color: #000000;
     z-index: 1;
-    opacity: 0.98;
+    opacity: 0.92;
 }
 
 /* Header einde */
@@ -702,8 +702,10 @@ button:hover {
   }
 
   footer .container {
-    padding: 30px;
+    padding: 80px;
     font-size: 20px;
+    display: flex;
+    justify-content: center;
   }
 
   /* Footer einde */

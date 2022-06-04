@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
 * {
@@ -17,6 +18,13 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
+
+.container { 
+  max-width: 1068px;
+  margin: auto;
+  width: 100%;
+}
+
 
 /* Nav */
 
@@ -50,12 +58,14 @@ body {
 .list li {
   height: 50%;
   width: 50%;
+  cursor: pointer;
   padding: 1px;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.4s ease;
+  /*jamie is een homo die houdt van ballen*/
 }
 
 .list li:nth-child(1) {
@@ -138,8 +148,8 @@ body {
 
 .menu_overlay .fas {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 40px;
+  top: 40px;
   font-size: 2.5rem;
   transition: all 0.3s ease;
   z-index: 100;
@@ -266,7 +276,7 @@ h1 span {
     left: 0;
     background-color: #000000;
     z-index: 1;
-    opacity: 0.92;
+    opacity: 0.8;
 }
 
 /* Header einde */
@@ -275,7 +285,7 @@ h1 span {
 /* Sections */
 
 .section-a {
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     font-family: 'Poppins', sans-serif;
     color: white;
@@ -332,10 +342,6 @@ h1 span {
 } 
 
 /* Go to top button einde */
-
-
-
-
 
 .about {
     width: 100%;
@@ -687,33 +693,11 @@ button:hover {
   [type="submit"]:hover { background:rgb(255, 102, 0); }
 
   /* Contact form einde */
-  
-
-  /* Footer */
-
-  
-  footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: black;
-    height: 80px;
-    color: white;
-  }
-
-  footer .container {
-    padding: 80px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-  }
-
-  /* Footer einde */
 
 
   /* Media queries */
 
-  @media screen and (max-width: 750px) and (min-width: 651px) {
+@media screen and (max-width: 750px) and (min-width: 651px) {
     .list li a {
       font-size: 1.4rem;
     }
@@ -724,14 +708,14 @@ button:hover {
     }
   }
 
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
       .header-content h1 {
           font-size: 40px;
       }
   }
 
-  @media screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {
 
     .text h1 {
         font-size: 60px;
@@ -756,7 +740,7 @@ button:hover {
     }
 }
 
-  @media screen and (max-width: 1180px) {
+@media screen and (max-width: 1180px) {
 
     .about {
         width: 100%;
@@ -789,6 +773,15 @@ button:hover {
     form {
       top: 425%;
     }
+}
+
+@media (max-width: 570px) {
+  .footer {
+      flex-direction: column;
+      row-gap: 1rem;
+      padding: 20px 0;
+      text-align: center;
+  }
 }
 
   /* Media queries einde*/

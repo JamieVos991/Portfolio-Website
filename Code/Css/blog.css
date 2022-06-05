@@ -16,6 +16,10 @@
     --bg-color: #fff;
 }
 
+body {
+    background-color: #212121;
+}
+
 ::selection {
     color: var(--bg-color);
     background: var(--second-color);
@@ -58,20 +62,10 @@ header {
     padding: 18px 0;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--text-color);
-}
-
-.logo span {
-    color: var(--second-color);
-}
-
 .home {
     width: 100%;
     min-height: 440px;
-    background: var(--container-color);
+    background: #333;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -103,6 +97,7 @@ header {
     font-size: 0.9rem;
     font-weight: 500;
     cursor: pointer;
+    color: white;
 }
 
 .active-filter {
@@ -199,6 +194,7 @@ header {
 
 .footer p {
     font-size: 0.938rem;
+    color: white;
 }
 
 .social {
@@ -209,18 +205,18 @@ header {
 
 .social .bx {
     font-size: 1.4rem;
-    color: var(--text-color);
+    color: white;
 }
 
 .social .bx:hover {
-    color: var(--second-color);
+    color: orange;
     transition: 0.3s all linear;
 }
 
 .post-header {
     width: 100%;
     height: 500px;
-    background: var(--container-color);
+    background: #333;
 }
 
 .post-container {
@@ -264,11 +260,13 @@ header {
 
 .sub-heading {
     font-size: 1.2rem;
+    color: white;
 }
 
 .post-text {
     font-size: 1rem;
     line-height: 1.7rem;
+    color: white;
     margin: 1rem 0;
     text-align: justify;
 }
@@ -277,6 +275,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
     row-gap: 1rem;
 }
 
@@ -402,6 +401,7 @@ header {
 
 .menu_overlay {
     width: 100vw;
+    font-family: 'Poppins', sans-serif;
     height: 100vh;
     position: absolute;
     overflow: hidden;
@@ -437,13 +437,12 @@ header {
     justify-content: center;
     align-items: center;
     transition: all 0.4s ease;
-    /*jamie is een homo die houdt van ballen*/
   }
   
   .list li:nth-child(1) {
     top: 0;
     left: 0;
-    background-color: #212121;
+    background-color: #333;
   }
   
   .list li:nth-child(2) {
@@ -455,7 +454,7 @@ header {
   .list li:nth-child(3) {
     top: 0;
     right: 0;
-    background-color: #212121;
+    background-color: #333;
   }
   
   .list li:nth-child(4) {
@@ -527,7 +526,7 @@ header {
     z-index: 100;
   }
   .menu_overlay .fas:hover {
-    color: #4b134f;
+    color: rgb(255, 102, 0);
     transform: scale(1.1) rotate(180deg);
   }
   
@@ -587,7 +586,7 @@ header {
     }
   
     .list a {
-      font-size: 1.4rem;
+      font-size: 1rem;
     }
   }
 

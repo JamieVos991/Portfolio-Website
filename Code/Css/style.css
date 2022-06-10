@@ -482,7 +482,7 @@ button:hover {
   background-position: center;
   border-radius: var(--spacing-l);
   bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  /* filter: brightness(0.75) saturate(1.2) contrast(0.85); */
   left: 0;
   position: absolute;
   background-color: black;

@@ -258,7 +258,7 @@ section {
 }
 
 .active-filter {
-    background: #fd8f44;
+    background: rgb(255, 102, 0);
     color: #fff;
     padding: 4px 10px;
     border-radius: 4px;
@@ -390,7 +390,7 @@ section {
 }
 
 .back-home {
-    color: #fd8f44;
+    color: rgb(255, 102, 0);;
     font-size: 0.9rem;
     text-decoration: none;
     cursor: pointer;

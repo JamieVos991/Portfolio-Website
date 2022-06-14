@@ -30,9 +30,6 @@ body {
   color: #fff;
   z-index: 100;
   position: fixed;
-
-  /* Position relative wanneer onder bepaalde pixels */
-
   transform: translateY(-100%);
   transition: transform 0.5s ease;
   background-image: repeating-linear-gradient(0deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), repeating-linear-gradient(90deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), linear-gradient(90deg, hsl(49, 0%, 3%), hsl(49, 0%, 3%));
@@ -156,6 +153,7 @@ body {
   right: 40px;
   top: 40px;
   font-size: 2.5rem;
+  cursor: pointer;
   transition: all 0.3s ease;
   z-index: 100;
 }
@@ -187,6 +185,7 @@ body {
 
 .fas {
   font-size: 2.4rem;
+  cursor: pointer;
   z-index: 99;
   color: white;
 }
@@ -443,7 +442,6 @@ button:hover {
 
 .hero-section {
   align-items: flex-start;
-  /* background-color: #212121; */
   display: flex;
   min-height: 100%;
   justify-content: center;
@@ -536,7 +534,7 @@ button:hover {
 .footer {
   position: relative;
   margin-top: 0px;
-  bottom: -50px;
+  bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;

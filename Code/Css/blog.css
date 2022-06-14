@@ -432,7 +432,7 @@ header {
   }
   
   .list li {
-    height: 50%;
+    height: 51%;
     width: 50%;
     cursor: pointer;
     padding: 1px;
@@ -484,13 +484,15 @@ header {
       transform: scale(1);
     }
     25% {
-      transform: scale(1.1) rotate(10deg);
+      transform: scale(0.9);
+      /* transform: scale(1.1) rotate(10deg); */
     }
     50% {
       transform: scale(1);
     }
     75% {
-      transform: scale(1.1) rotate(10deg);
+      transform: scale(0.9);
+      /* transform: scale(1.1) rotate(10deg); */
     }
     100% {
       transform: scale(1);
@@ -502,13 +504,15 @@ header {
       transform: scale(1);
     }
     25% {
-      transform: scale(1.1) rotate(-10deg);
+      transform: scale(0.9);
+      /* transform: scale(1.1) rotate(10deg); */
     }
     50% {
       transform: scale(1);
     }
     75% {
-      transform: scale(1.1) rotate(-10deg);
+      transform: scale(0.9);
+      /* transform: scale(1.1) rotate(10deg); */
     }
     100% {
       transform: scale(1);

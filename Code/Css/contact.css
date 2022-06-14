@@ -154,13 +154,15 @@ textarea {
     transform: scale(1);
   }
   25% {
-    transform: scale(1.1) rotate(10deg);
+    transform: scale(0.9);
+    /* transform: scale(1.1) rotate(10deg); */
   }
   50% {
     transform: scale(1);
   }
   75% {
-    transform: scale(1.1) rotate(10deg);
+    transform: scale(0.9);
+    /* transform: scale(1.1) rotate(10deg); */
   }
   100% {
     transform: scale(1);
@@ -172,13 +174,15 @@ textarea {
     transform: scale(1);
   }
   25% {
-    transform: scale(1.1) rotate(-10deg);
+    transform: scale(0.9);
+    /* transform: scale(1.1) rotate(10deg); */
   }
   50% {
     transform: scale(1);
   }
   75% {
-    transform: scale(1.1) rotate(-10deg);
+    transform: scale(0.9);
+    /* transform: scale(1.1) rotate(10deg); */
   }
   100% {
     transform: scale(1);

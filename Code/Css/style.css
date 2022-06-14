@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-
 * {
     scroll-behavior: smooth;
     margin: 0;
@@ -10,9 +9,8 @@
 }
 
 body {
-    background-color: #212121;
+  background-image: repeating-linear-gradient(0deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px,transparent 1px, transparent 51px),repeating-linear-gradient(90deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px,transparent 1px, transparent 51px),linear-gradient(90deg, hsl(49,0%,3%),hsl(49,0%,3%));
     font-size: 1rem;
-    color: #333;
     overflow-x: hidden;
 }
 
@@ -20,11 +18,11 @@ body {
     display: none;
 }
 
-.container { 
+/* .container { 
   max-width: 1068px;
   margin: auto;
   width: 100%;
-}
+} */
 
 /* Nav */
 
@@ -42,7 +40,7 @@ body {
 
   transform: translateY(-100%);
   transition: transform 0.5s ease;
-  background: #000; 
+  background-image: repeating-linear-gradient(0deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px,transparent 1px, transparent 51px),repeating-linear-gradient(90deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px,transparent 1px, transparent 51px),linear-gradient(90deg, hsl(49,0%,3%),hsl(49,0%,3%));
   display: flex;
 
   justify-content: center;
@@ -109,13 +107,15 @@ body {
     transform: scale(1);
   }
   25% {
-    transform: scale(1.1) rotate(10deg);
+    transform: scale(0.9);
+    /* transform: scale(1.1) rotate(10deg); */
   }
   50% {
     transform: scale(1);
   }
   75% {
-    transform: scale(1.1) rotate(10deg);
+    transform: scale(0.9);
+    /* transform: scale(1.1) rotate(10deg); */
   }
   100% {
     transform: scale(1);
@@ -127,13 +127,15 @@ body {
     transform: scale(1);
   }
   25% {
-    transform: scale(1.1) rotate(-10deg);
+    transform: scale(0.9);
+    /* transform: scale(1.1) rotate(10deg); */
   }
   50% {
     transform: scale(1);
   }
   75% {
-    transform: scale(1.1) rotate(-10deg);
+    transform: scale(0.9);
+    /* transform: scale(1.1) rotate(10deg); */
   }
   100% {
     transform: scale(1);
@@ -292,7 +294,7 @@ h1 span {
     font-family: 'Poppins', sans-serif;
     color: white;
     z-index: -1;
-    background-color: #212121;
+    /* background-color: #212121; */
 }
 
 .section-b {
@@ -301,7 +303,7 @@ h1 span {
     font-family: 'Poppins', sans-serif;
     color: white;
     z-index: -1;
-    background-color: #212121;
+    /* background-color: #212121; */
 }
 
 .section-b .container {
@@ -315,7 +317,7 @@ h1 span {
   font-family: 'Poppins', sans-serif;
   color: white;
   z-index: -1;
-  background-color: #212121;
+  /* background-color: #212121; */
   display: flex;
   justify-content: center;
 }
@@ -437,7 +439,7 @@ button:hover {
 
 .hero-section{
   align-items: flex-start;
-  background-color: #212121;
+  /* background-color: #212121; */
   display: flex;
   min-height: 100%;
   justify-content: center;

@@ -1,331 +1,339 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
- 
- * {
-     box-sizing: border-box;
-     margin: 0;
-     padding: 0;
- }
 
- ::-webkit-scrollbar {
-     display: none;
- }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
- body {
-     font-family: 'Poppins', sans-serif;
- }
+::-webkit-scrollbar {
+  display: none;
+}
 
- :root {
-     --main-color: rgb(255, 102, 0);
-     --second-color: #1b1b1b;
-     --third-color: #d4d4d4;
-     --bg-color: #333;
-     --main-grid: repeat(auto-fill, minmax(300px, 1fr));
-     --main-padding: 40px;
- }
-
- .skills {
-     padding-top: var(--main-padding);
-     padding-bottom: var(--main-padding);
-     background-color: var(--bg-color);
-     text-align: center;
- }
-
- .container {
-     padding-left: 15px;
-     padding-right: 15px;
-     margin-left: auto;
-     margin-right: auto;
- }
-
- @media (min-width: 1200px) {
-
-    .container {
-        width: 1170px;
-    }
- }
-
- @media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
- }
-
- @media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
- }
+body {
+  font-family: 'Poppins', sans-serif;
+}
 
 
- .skills .text{
-    padding-bottom: 20px;
+/* Skills section */
+
+.skills {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: repeating-linear-gradient(0deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), repeating-linear-gradient(90deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), linear-gradient(90deg, hsl(49, 0%, 3%), hsl(49, 0%, 3%));
+  text-align: center;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills .text {
+  padding-bottom: 20px;
 }
 
 .skills h2 {
-    font-size: 35px;
-    color: white;
-    padding-bottom: 20px;
+  font-size: 35px;
+  color: white;
+  padding-bottom: 20px;
 }
 
 .skills h2 span {
-    color: var(--main-color);
+  color: rgb(255, 102, 0);
 }
 
-.skills p { 
-    font-size: 18px;
-    color: white;
-    font-weight: 600;
+.skills p {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
 }
 
 .skills .skill-card {
-    display: grid;
-    grid-template-columns: var(--main-grid);
-    grid-gap: 60px;
-    margin-bottom: 70px;
-    margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 60px;
+  margin-bottom: 70px;
+  margin-top: 60px;
 }
 
 .skills .skill-card .card {
-    padding: 25px;
-    text-align: left;
-    background-color: var(--second-color);
-    border: 2px solid var(--main-color);
-    color: var(--third-color);
-    transition: 1s;
-    position: relative;
+  padding: 25px;
+  text-align: left;
+  background-color: #1b1b1b;
+  border: 2px solid rgb(255, 102, 0);
+  color: #d4d4d4;
+  transition: 1s;
+  position: relative;
 }
 
 .skills .card h4 {
-    padding-top: 40px;
-    padding-bottom: 10px;
-    font-size: 25px;
-    font-weight: 500;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .skills .card p {
-    line-height: 1.7;
-    font-size: 16px;
-    color: var(--third-color);
+  line-height: 1.7;
+  font-size: 16px;
+  color: #d4d4d4;
 }
 
 .skills .card i {
-    font-size: 42px;
-    padding: 15px;
-    width: 75px;
-    height: 75px;
-    color: var(--second-color);
-    background-color: var(--main-color);
-    position: absolute;
-    top: calc(-75px / 2); 
-    left: 39%;
-    transform: rotate(45deg);
-    transition: 1s;
-    border: 1px solid var(--main-color);
+  font-size: 42px;
+  padding: 15px;
+  width: 75px;
+  height: 75px;
+  color: #1b1b1b;
+  background-color: rgb(255, 102, 0);
+  position: absolute;
+  top: calc(-75px / 2);
+  left: 39%;
+  transform: rotate(45deg);
+  transition: 1s;
+  border: 1px solid rgb(255, 102, 0);
 }
 
 .skills .card:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .skills .card:hover i {
-    transform: rotate(0deg);
-    background-color: var(--bg-color);
+  transform: rotate(0deg);
+  background-color: #333;
 }
 
-.skills .card:hover h4 .skills .card:hover p{
-    color: var(--second-color);
-    transition: 1s;
+.skills .card:hover h4 .skills .card:hover p {
+  color: #1b1b1b;
+  transition: 1s;
 }
 
+/* Skills sections einde */
+
+
+/* Menu overlay */
 
 .menu_overlay {
-    width: 100vw;
-    font-family: 'Poppins', sans-serif;
-    height: 100vh;
-    position: absolute;
-    overflow: hidden;
-    color: #fff;
-    z-index: 100;
-    position: fixed;
-  
-    /* Position relative wanneer onder bepaalde pixels */
-  
-    transform: translateY(-100%);
-    transition: transform 0.5s ease;
-    background: #000; 
-    display: flex;
-  
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .list {
-    height: 40%;
-    width: 40%;
-    position: relative;
-    list-style: none;
-  }
-  
-  .list li {
-    height: 50%;
-    width: 50%;
-    cursor: pointer;
-    padding: 1px;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.4s ease;
-  }
-  
-  .list li:nth-child(1) {
-    top: 0;
-    left: 0;
-    background-color: #333;
-  }
-  
-  .list li:nth-child(2) {
-    bottom: 0;
-    left: 0;
-    background-color: #333;
-  }
-  
-  .list li:nth-child(3) {
-    top: 0;
-    right: 0;
-    background-color: #333;
-  }
-  
-  .list li:nth-child(4) {
-    bottom: 0;
-    right: 0;
-    background-color: #333;
-  }
-  
-  .list li:nth-child(1):hover,
-  .list li:nth-child(2):hover {
-    z-index: 1;
-    animation: bounce 2s ease infinite;
-  }
-  
-  .list li:nth-child(3):hover,
-  .list li:nth-child(4):hover {
-    z-index: 1;
-    animation: bounce2 2s ease infinite;
-  }
-  
-  @keyframes bounce {
-    0% {
-      transform: scale(1);
-    }
-    25% {
-      transform: scale(1.1) rotate(10deg);
-    }
-    50% {
-      transform: scale(1);
-    }
-    75% {
-      transform: scale(1.1) rotate(10deg);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  @keyframes bounce2 {
-    0% {
-      transform: scale(1);
-    }
-    25% {
-      transform: scale(1.1) rotate(-10deg);
-    }
-    50% {
-      transform: scale(1);
-    }
-    75% {
-      transform: scale(1.1) rotate(-10deg);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  .list a {
-    font-size: 1.99rem;
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .menu_overlay .fas {
-    position: absolute;
-    right: 40px;
-     top: 40px;
-    font-size: 2.5rem;
-    transition: all 0.3s ease;
-    z-index: 100;
-  }
-  .menu_overlay .fas:hover {
-    color: rgb(255, 102, 0);
-    transform: scale(1.1) rotate(180deg);
-  }
-  
-  #menuBtn {
-    display: none;
-  }
-  
-  .landing_page {
-    max-height: 100vh;
-    height: 100%;
-    width: 100%;
-    position: relative;
-  }
-  
-  .menu {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    padding: 20px;
-    position: fixed;
-    z-index: 99;
-  }
-  
-  .fas {
-    font-size: 2.4rem;
-    z-index: 99;
-    color: white;
-  }
-  
-  .fas:hover {
-    color: rgb(255, 102, 0);
-  }
-  
-  @media screen and (max-width: 750px) and (min-width: 651px) {
-    .list li a {
-      font-size: 1.4rem;
-    }
-  
-    .list {
-      height: 30%;
-      width: 50%;
-    }
-  }
-  
-  @media screen and (max-width: 650px) {
-    .list {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-  
-    .list li {
-      margin-bottom: 10px;
-      position: relative;
-    }
-  
-    .list a {
-      font-size: 1rem;
-    }
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  color: #fff;
+  z-index: 100;
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+  background-image: repeating-linear-gradient(0deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), repeating-linear-gradient(90deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), linear-gradient(90deg, hsl(49, 0%, 3%), hsl(49, 0%, 3%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  height: 40%;
+  width: 40%;
+  position: relative;
+  list-style: none;
+}
+
+.list li {
+  height: 51%;
+  width: 50%;
+  cursor: pointer;
+  padding: 1px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.list li:nth-child(1) {
+  top: 0;
+  left: 0;
+  background-color: #333;
+}
+
+.list li:nth-child(2) {
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+}
+
+.list li:nth-child(3) {
+  top: 0;
+  right: 0;
+  background-color: #333;
+}
+
+.list li:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  background-color: #333;
+}
+
+.list li:nth-child(1):hover,
+.list li:nth-child(2):hover {
+  z-index: 1;
+  animation: bounce 2s ease infinite;
+}
+
+.list li:nth-child(3):hover,
+.list li:nth-child(4):hover {
+  z-index: 1;
+  animation: bounce2 2s ease infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
   }
 
+  25% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce2 {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.list a {
+  font-size: 1.99rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu_overlay .fas {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  font-size: 2.5rem;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.menu_overlay .fas:hover {
+  color: rgb(255, 102, 0);
+  transform: scale(1.1) rotate(180deg);
+}
+
+#menuBtn {
+  display: none;
+}
+
+.landing_page {
+  max-height: 100vh;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 20px;
+  position: fixed;
+  z-index: 99;
+}
+
+.fas {
+  font-size: 2.4rem;
+  z-index: 99;
+  color: white;
+}
+
+.fas:hover {
+  color: rgb(255, 102, 0);
+}
+
+/* Menu overlay einde */
+
+
+/* Media querries */
+
+@media (min-width: 1200px) {
+
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+
+@media screen and (max-width: 750px) and (min-width: 651px) {
+  .list li a {
+    font-size: 1.4rem;
+  }
+
+  .list {
+    height: 30%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .list li {
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .list a {
+    font-size: 1rem;
+  }
+}
+
+/* Media querries  einde*/

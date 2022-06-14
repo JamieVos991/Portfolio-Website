@@ -21,7 +21,8 @@
 }
 
 body {
-    background-color: #212121;
+     background-image: repeating-linear-gradient(0deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), repeating-linear-gradient(90deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), linear-gradient(90deg, hsl(49, 0%, 3%), hsl(49, 0%, 3%));
+     overflow-x: hidden;
 }
 
 ::selection {
@@ -68,7 +69,7 @@ header {
 
 .home {
     width: 100%;
-    min-height: 440px;
+    min-height: 500px;
     background: #333;
     display: grid;
     justify-content: center;
@@ -417,7 +418,7 @@ header {
   
     transform: translateY(-100%);
     transition: transform 0.5s ease;
-    background: #000; 
+    background-image: repeating-linear-gradient(0deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), repeating-linear-gradient(90deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), linear-gradient(90deg, hsl(49, 0%, 3%), hsl(49, 0%, 3%));
     display: flex;
   
     justify-content: center;

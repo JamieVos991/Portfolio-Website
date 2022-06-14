@@ -5,15 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
     <title>Contact Me</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="Css/contact.css">
+
+    <!-- Shortcut icon -->
+    <link rel="shortcut icon" href="Foto's/70955320.png" type="image/x-icon" />
+
+    <!-- Stylesheets -->
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -24,10 +31,10 @@
             <i class="fas fa-times"></i>
         </label>
         <ul class="list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li onclick="location.href='index.html';"><a>Home</a></li>
+      <li onclick="location.href='skills.html';"><a>Skills</a></li>
+      <li onclick="location.href='blog.html';"><a>Blog</a></li>
+      <li onclick="location.href='contact.html';"><a>Contact</a></li>
         </ul>
     </div>
     <div class="landing_page">
@@ -38,16 +45,42 @@
         </div>
     </div>
 
-    <div class="container" >
-        <form data-aos="zoom-in">
+    <div class="leftside">
+        <ul>
+            <li><i class="fa fa-facebook"></i></li>
+            <li><i class="fa fa-twitter"></i></li>
+            <li><i class="fa fa-github"></i></li>
+            <li><i class="fa fa-linkedin"></i></li>
+            <li><i class="fa fa-instagram"></i></li>
+        </ul>
+    </div>
+
+    <div class="container" data-aos="zoom-in">
+        <form>
             <input name="name" type="text" class="feedback-input" placeholder="Name" />
             <input name="email" type="text" class="feedback-input" placeholder="Email" />
             <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
             <input type="submit" value="SUBMIT" />
         </form>
     </div>
-</body>
 
-<script src="Js/app.js"></script>
+    <div class="footer container">
+        <p>&#169; Jamie Vos</p>
+    </div>
+
+
+    <!-- Scripts -->
+
+    <script src="Js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+          duration: 3000,
+          once: true,
+        });
+      </script>
+
+</body>
 
 </html>

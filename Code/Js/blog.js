@@ -1,4 +1,4 @@
-// Filter JS
+
 $(document).ready(function (){
     $(".filter-item").click(function (){
       const value = $(this).attr("data-filter");
@@ -11,7 +11,6 @@ $(document).ready(function (){
       }
     });
   
-    // Add active to btn 
     $(".filter-item").click(function(){
       $(this).addClass("active-filter").siblings().removeClass("active-filter");
     });

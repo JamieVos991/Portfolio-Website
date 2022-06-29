@@ -25,20 +25,19 @@ body {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+ margin-left: 470px;
 }
 
 .skills .text {
   padding-bottom: 20px;
+  margin-left: 230px;
 }
 
 .skills h2 {
   font-size: 35px;
   color: white;
   padding-bottom: 20px;
+  margin-left: 5px;
 }
 
 .skills h2 span {
@@ -53,10 +52,11 @@ body {
 
 .skills .skill-card {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 130%;
   grid-gap: 60px;
   margin-bottom: 70px;
-  margin-top: 60px;
+  margin-top: 105px;
 }
 
 .skills .skill-card .card {
@@ -92,7 +92,7 @@ body {
   position: absolute;
   top: calc(-75px / 2);
   left: 39%;
-  transform: rotate(45deg);
+  
   transition: 1s;
   border: 1px solid rgb(255, 102, 0);
 }
@@ -102,7 +102,7 @@ body {
 }
 
 .skills .card:hover i {
-  transform: rotate(0deg);
+  transform: rotate(45deg);
   background-color: #333;
 }
 
@@ -142,6 +142,7 @@ body {
 .list li {
   height: 51%;
   width: 50%;
+  cursor: pointer;
   cursor: pointer;
   padding: 1px;
   position: absolute;
@@ -187,47 +188,16 @@ body {
   animation: bounce2 2s ease infinite;
 }
 
+
 @keyframes bounce {
-  0% {
-    transform: scale(1);
-  }
-
-  25% {
-    transform: scale(0.9);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-
-  75% {
-    transform: scale(0.9);
-  }
-
-  100% {
-    transform: scale(1);
+  10%, 100% {
+    transform: scale(0.8);
   }
 }
 
 @keyframes bounce2 {
-  0% {
-    transform: scale(1);
-  }
-
-  25% {
-    transform: scale(0.9);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-
-  75% {
-    transform: scale(0.9);
-  }
-
-  100% {
-    transform: scale(1);
+  10%, 100% {
+    transform: scale(0.8);
   }
 }
 
@@ -240,6 +210,7 @@ body {
 .menu_overlay .fas {
   position: absolute;
   right: 40px;
+  cursor: pointer;
   top: 40px;
   font-size: 2.5rem;
   transition: all 0.3s ease;
@@ -274,6 +245,7 @@ body {
 .fas {
   font-size: 2.4rem;
   z-index: 99;
+  cursor: pointer;
   color: white;
 }
 
@@ -338,3 +310,4 @@ body {
 }
 
 /* Media querries einde*/
+

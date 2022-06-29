@@ -13,18 +13,21 @@
   <link rel="stylesheet" href="Css/style.css">
 
   <!-- Shortcut icon -->
-  <link rel="shortcut icon" href="Foto's/70955320.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="../Foto's/Logo.png">
 
   <!-- Stylesheets -->
   <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
-<body>
+<body id="body_function">
 
   <input type="checkbox" name="" id="menuBtn">
   <div class="menu_overlay">
@@ -61,43 +64,43 @@
 
   <section class="hero-section">
     <div class="card-grid">
-      <a class="card" href="#">
+      <a class="card" onclick="on()">
         <div class="card__background" style="background-image: url('../Foto\'s/Drill.jpg');"></div>
         <div class="card__content">
         </div>
       </a>
-      <a class="card" href="#">
+      <a class="card" onclick="on2()">
         <div class="card__background" style="background-image: url('../Foto\'s/577x1047_Country.jpg');"></div>
         <div class="card__content">
         </div>
       </a>
-      <a class="card" href="#">
+      <a class="card" onclick="on3()">
         <div class="card__background" style="background-image: url('../Foto\'s/b.jpg');"></div>
         <div class="card__content">
         </div>
         </li>
-        <a class="card" href="#">
-          <div class="card__background" style="background-image: url('../Foto\'s/12.jpg');"></div>
+        <a class="card" onclick="on4()">
+          <div class="card__background" style="background-image: url('../Foto\'s/TClogo.jpg');"></div>
           <div class="card__content">
           </div>
         </a>
-        <a class="card" href="#">
-          <div class="card__background" style="background-image: url('../Foto\'s/Untitled-1.jpg');"></div>
+        <a class="card" onclick="on5()">
+          <div class="card__background" style="background-image: url('../Foto\'s/spaceship.png');"></div>
           <div class="card__content">
           </div>
         </a>
-        <a class="card" href="#">
+        <a class="card" onclick="on6()">
           <div class="card__background" style="background-image: url('../Foto\'s/Untitled-2.jpg');"></div>
           <div class="card__content">
           </div>
         </a>
-        <a class="card" href="#">
-          <div class="card__background" style="background-image: url('../Foto\'s/Untitled-3.jpg');"></div>
+        <a class="card" onclick="on7()">
+          <div class="card__background" style="background-image: url('../Foto\'s/95.png');"></div>
           <div class="card__content">
           </div>
         </a>
-        <a class="card" href="#">
-          <div class="card__background" style="background-image: url('../Foto\'s/Untitled-4.jpg');"></div>
+        <a class="card" onclick="on8()">
+          <div class="card__background" style="background-image: url('../Foto\'s/Design Kamer 1.png');"></div>
           <div class="card__content">
           </div>
         </a>
@@ -136,13 +139,222 @@
 
   <div class="footer container">
     <p>&#169; Jamie Vos</p>
-</div>
+  </div>
+
+  <section id="overlay">
+    <div class="about-card">
+      <div class="inhoud">
+        <h1 id="font-size" class="owText text-center" style=" padding-top: 40px; color: white;">Politie zuidoost</h1>
+        <p style="padding-top: 40px; color: white;"></p>
+        <!-- <a href="#" class="fa fa-github"></a> -->
+        <div onclick="off()" class="close-btn">&times;</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="overlay-2">
+    <div class="about-card">
+      <div class="inhoud">
+        <h1 id="font-size" class="owText text-center" style=" padding-top: 40px; color: white;">Longnex</h1>
+        <p style="padding-top: 40px; color: white;">
+      
+
+    
+        <div onclick="off2()" class="close-btn">&times;</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="overlay-3">
+    <div class="about-card">
+      <div class="inhoud">
+        <h1 id="font-size" class="owText text-center" style=" padding-top: 40px; color: white;">Welcome to Mars</h1>
+        <p style="padding-top: 40px; color: white;">
+      
+
+    
+        <div onclick="off3()" class="close-btn">&times;</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="overlay-4">
+    <div class="about-card">
+      <div class="inhoud">
+        <h1 id="font-size" class="owText text-center" style=" padding-top: 40px; color: white;">Transformers Community</h1>
+        <p style="padding-top: 40px; color: white;">
+      
+
+    
+        <div onclick="off4()" class="close-btn">&times;</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="overlay-5">
+    <div class="about-card">
+      <div class="inhoud">
+        <h1 id="font-size" class="owText text-center" style=" padding-top: 40px; color: white;">Arcade Mechanics</h1>
+        <p style="padding-top: 40px; color: white;">
+      
+
+    
+        <div onclick="off5()" class="close-btn">&times;</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="overlay-6">
+    <div class="about-card">
+      <div class="inhoud">
+        <h1 id="font-size" class="owText text-center" style=" padding-top: 40px; color: white;">Input-Output</h1>
+        <p style="padding-top: 40px; color: white;">
+      
+
+    
+        <div onclick="off6()" class="close-btn">&times;</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="overlay-7">
+    <div class="about-card">
+      <div class="inhoud">
+        <h1 id="font-size" class="owText text-center" style=" padding-top: 40px; color: white;">CSS Art</h1>
+        <p style="padding-top: 40px; color: white;">
+      
+
+    
+        <div onclick="off7()" class="close-btn">&times;</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="overlay-8">
+    <div class="about-card">
+      <div class="inhoud">
+        <h1 id="font-size" class="owText text-center" style=" padding-top: 40px; color: white;">Radicale kunstspeeltuin</h1>
+        <p style="padding-top: 40px; color: white;">
+      
+
+    
+        <div onclick="off8()" class="close-btn">&times;</div>
+      </div>
+    </div>
+  </section>
 
   <!-- Javascript + Animate library-->
+
+  <script>
+
+    function on() {
+
+      document.getElementById("overlay").style.display = "flex";
+      document.getElementById("body_function").style.overflow = "hidden";
+    }
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+      document.getElementById("body_function").style.overflow = "auto";
+
+    }
+
+    function on2() {
+
+      document.getElementById("overlay-2").style.display = "flex";
+      document.getElementById("body_function").style.overflow = "hidden";
+
+
+    }
+    function off2() {
+      document.getElementById("overlay-2").style.display = "none";
+      document.getElementById("body_function").style.overflow = "auto";
+      
+
+    }
+
+    function on3() {
+
+      document.getElementById("overlay-3").style.display = "flex";
+      document.getElementById("body_function").style.overflow = "hidden";
+
+
+    }
+    function off3() {
+      document.getElementById("overlay-3").style.display = "none";
+      document.getElementById("body_function").style.overflow = "auto";
+
+    }
+
+    function on4() {
+
+      document.getElementById("overlay-4").style.display = "flex";
+      document.getElementById("body_function").style.overflow = "hidden";
+
+    }
+    function off4() {
+      document.getElementById("overlay-4").style.display = "none";
+      document.getElementById("body_function").style.overflow = "auto";
+
+    }
+
+    function on5() {
+
+      document.getElementById("overlay-5").style.display = "flex";
+      document.getElementById("body_function").style.overflow = "hidden";
+
+
+    }
+    function off5() {
+      document.getElementById("overlay-5").style.display = "none";
+      document.getElementById("body_function").style.overflow = "auto";
+
+    }
+
+    function on6() {
+
+      document.getElementById("overlay-6").style.display = "flex";
+      document.getElementById("body_function").style.overflow = "hidden";
+
+
+    }
+    function off6() {
+      document.getElementById("overlay-6").style.display = "none";
+      document.getElementById("body_function").style.overflow = "auto";
+
+    }
+
+    function on7() {
+
+      document.getElementById("overlay-7").style.display = "flex";
+      document.getElementById("body_function").style.overflow = "hidden";
+
+
+    }
+    function off7() {
+      document.getElementById("overlay-7").style.display = "none";
+      document.getElementById("body_function").style.overflow = "auto";
+
+    }
+
+    function on8() {
+
+      document.getElementById("overlay-8").style.display = "flex";
+      document.getElementById("body_function").style.overflow = "hidden";
+
+
+    }
+    function off8() {
+      document.getElementById("overlay-8").style.display = "none";
+      document.getElementById("body_function").style.overflow = "auto";
+
+    }
+
+  </script>
 
   <script src="Js/app.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
+  </div>
 
   <script>
     AOS.init({
@@ -150,8 +362,6 @@
       once: true,
     });
   </script>
-</div>
-
 </body>
 
 </html>

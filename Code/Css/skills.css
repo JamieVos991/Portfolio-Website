@@ -27,6 +27,7 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: 200px;
   margin-left: auto;
   margin-right: auto;
 }

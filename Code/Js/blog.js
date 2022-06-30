@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+// Filter 
+=======
 
+>>>>>>> bd0899b067e12b4128e47c063da6cb131cf31bee
 $(document).ready(function (){
     $(".filter-item").click(function (){
       const value = $(this).attr("data-filter");

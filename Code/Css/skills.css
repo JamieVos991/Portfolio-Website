@@ -12,12 +12,120 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+<<<<<<< HEAD
   background-image: repeating-linear-gradient(0deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), repeating-linear-gradient(90deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), linear-gradient(90deg, hsl(49, 0%, 3%), hsl(49, 0%, 3%));
+=======
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
 }
 
 
 /* Skills section */
 
+<<<<<<< HEAD
+=======
+.skills {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: repeating-linear-gradient(0deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), repeating-linear-gradient(90deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), linear-gradient(90deg, hsl(49, 0%, 3%), hsl(49, 0%, 3%));
+  text-align: center;
+}
+
+.container {
+<<<<<<< HEAD
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 200px;
+  margin-left: auto;
+  margin-right: auto;
+=======
+ margin-left: 470px;
+>>>>>>> 7fc4fca054b06036e2f0cd2e25502fc771918334
+}
+
+.skills .text {
+  padding-bottom: 20px;
+  margin-left: 230px;
+}
+
+.skills h2 {
+  font-size: 35px;
+  color: white;
+  padding-bottom: 20px;
+  margin-left: 5px;
+}
+
+.skills h2 span {
+  color: rgb(255, 102, 0);
+}
+
+.skills p {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+}
+
+.skills .skill-card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: 130%;
+  grid-gap: 60px;
+  margin-bottom: 70px;
+  margin-top: 105px;
+}
+
+.skills .skill-card .card {
+  padding: 25px;
+  text-align: left;
+  background-color: #1b1b1b;
+  border: 2px solid rgb(255, 102, 0);
+  color: #d4d4d4;
+  transition: 1s;
+  position: relative;
+}
+
+.skills .card h4 {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.skills .card p {
+  line-height: 1.7;
+  font-size: 16px;
+  color: #d4d4d4;
+}
+
+.skills .card i {
+  font-size: 42px;
+  padding: 15px;
+  width: 75px;
+  height: 75px;
+  color: #1b1b1b;
+  background-color: rgb(255, 102, 0);
+  position: absolute;
+  top: calc(-75px / 2);
+  left: 39%;
+  
+  transition: 1s;
+  border: 1px solid rgb(255, 102, 0);
+}
+
+.skills .card:hover {
+  background-color: transparent;
+}
+
+.skills .card:hover i {
+  transform: rotate(45deg);
+  background-color: #333;
+}
+
+.skills .card:hover h4 .skills .card:hover p {
+  color: #1b1b1b;
+  transition: 1s;
+}
+
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
 /* Skills sections einde */
 
 
@@ -163,8 +271,34 @@ body {
 /* Menu overlay einde */
 
 
+<<<<<<< HEAD
 /* Media querries */
 
+=======
+
+/* Media querries */
+
+@media (min-width: 1200px) {
+
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
 @media screen and (max-width: 750px) and (min-width: 651px) {
   .list li a {
     font-size: 1.4rem;

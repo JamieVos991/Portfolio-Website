@@ -181,6 +181,7 @@ body {
 .container-social {
   display: grid;
   margin: auto;
+<<<<<<< HEAD
   padding: 100px;
  
 }
@@ -188,6 +189,11 @@ body {
 .container {
   display: flex;
   justify-content: center;
+=======
+  width: 80%;
+  padding: 100px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 2fr))
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
 }
 
 

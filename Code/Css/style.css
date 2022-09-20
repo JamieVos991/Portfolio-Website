@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+=======
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
 
 * {
   scroll-behavior: smooth;
@@ -19,6 +22,7 @@ body {
   display: none;
 }
 
+<<<<<<< HEAD
 p {
   font-family: 'Source Code Pro', monospace;
 }
@@ -46,6 +50,8 @@ p {
   color: white;
 
 }
+=======
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
 
 /* Nav */
 
@@ -275,7 +281,11 @@ h1 span {
   left: 0;
   background: #0a0a0a;
   z-index: 1;
+<<<<<<< HEAD
   opacity: 0.9;
+=======
+  opacity: 0.6;
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
 }
 
 /* Header einde */
@@ -331,10 +341,16 @@ h1 span {
   border-radius: 50%;
   z-index: 2;
   bottom: 40px;
+<<<<<<< HEAD
   /* visibility: hidden; */
   right: 50px;
   text-decoration: none;
   text-align: center;  
+=======
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
   line-height: 50px;
   color: white;
   font-size: 22px;
@@ -397,20 +413,68 @@ h1 span {
   margin-bottom: 45px;
 }
 
+<<<<<<< HEAD
 .card-section {
+=======
+button {
+  background-color: #546FFF;
+  color: white;
+  border: 2px solid transparent;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.1);
+
+  transition: .4s;
+  cursor: pointer;
+}
+
+
+
+
+:root {
+  --background-dark: #2d3548;
+  --text-light: rgba(255, 255, 255, 0.6);
+  --text-lighter: rgba(255, 255, 255, 0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 1200px;
+}
+
+
+.hero-section {
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
   align-items: flex-start;
   display: flex;
   min-height: 100%;
   justify-content: center;
+<<<<<<< HEAD
   padding: 64px 24px;
+=======
+  padding: var(--spacing-xxl) var(--spacing-l);
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
 }
 
 .card-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+<<<<<<< HEAD
   grid-column-gap: 24px;
   grid-row-gap: 24px;
   max-width: 1200px;
+=======
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
   width: 100%;
 }
 
@@ -437,12 +501,16 @@ h1 span {
   display: block;
   padding-bottom: 150%;
   width: 100%;
+<<<<<<< HEAD
   
+=======
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
 }
 
 .card__background {
   background-size: cover;
   background-position: center;
+<<<<<<< HEAD
   border-radius: 24px;
   bottom: 0;
   /* filter: brightness(0.75) saturate(1.2) contrast(0.85); */
@@ -451,6 +519,14 @@ h1 span {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   position: absolute;
+=======
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  /* filter: brightness(0.75) saturate(1.2) contrast(0.85); */
+  left: 0;
+  position: absolute;
+  background-color: black;
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
   right: 0;
   top: 0;
   transform-origin: center;
@@ -461,6 +537,7 @@ h1 span {
 }
 
 .card:hover .card__background {
+<<<<<<< HEAD
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
@@ -480,14 +557,21 @@ h1 span {
   justify-content: center;
   align-items: center;
   word-spacing: 12px;
+=======
+  transform: scale(1.05) translateZ(0);
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
 }
 
 .card__content {
   left: 0;
+<<<<<<< HEAD
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   padding: 24px;
+=======
+  padding: var(--spacing-l);
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
   position: absolute;
   display: flex;
   justify-content: center;
@@ -496,14 +580,24 @@ h1 span {
 }
 
 .card__category {
+<<<<<<< HEAD
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.9rem;
   margin-bottom: 8px;
+=======
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-s);
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
   text-transform: uppercase;
 }
 
 .card__heading {
+<<<<<<< HEAD
   color: rgba(255, 255, 255, 0.9);
+=======
+  color: var(--text-lighter);
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
   font-size: 1.9rem;
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
   line-height: 1.4;
@@ -520,7 +614,11 @@ h1 span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+<<<<<<< HEAD
   padding: 20px 50px;
+=======
+  padding: 50px 50px;
+>>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
 }
 
 .footer p {

@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+    background-image: repeating-linear-gradient(0deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), repeating-linear-gradient(90deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), linear-gradient(90deg, hsl(49, 0%, 3%), hsl(49, 0%, 3%));
+}
+
+/* Menu overlay */
+
+.menu_overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  color: #fff;
+  z-index: 100;
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+  background-image: repeating-linear-gradient(0deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), repeating-linear-gradient(90deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), linear-gradient(90deg, hsl(49, 0%, 3%), hsl(49, 0%, 3%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  height: 40%;
+  width: 40%;
+  position: relative;
+  list-style: none;
+}
+
+.list li {
+  height: 51%;
+  width: 50%;
+  cursor: pointer;
+  padding: 1px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.list li:nth-child(1) {
+  top: 0;
+  left: 0;
+  background-color: #333;
+}
+
+.list li:nth-child(2) {
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+}
+
+.list li:nth-child(3) {
+  top: 0;
+  right: 0;
+  background-color: #333;
+}
+
+.list li:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  background-color: #333;
+}
+
+.list li:nth-child(1):hover,
+.list li:nth-child(2):hover {
+  z-index: 1;
+  animation: bounce 2s ease infinite;
+}
+
+.list li:nth-child(3):hover,
+.list li:nth-child(4):hover {
+  z-index: 1;
+  animation: bounce2 2s ease infinite;
+}
+
+
+@keyframes bounce {
+  10%, 100% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes bounce2 {
+  10%, 100% {
+    transform: scale(0.8);
+  }
+}
+
+.list a {
+  font-size: 1.99rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu_overlay .fas {
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+  top: 40px;
+  font-size: 2.5rem;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.menu_overlay .fas:hover {
+  color: rgb(255, 102, 0);
+  transform: scale(1.1) rotate(180deg);
+}
+
+#menuBtn {
+  display: none;
+}
+
+.landing_page {
+  max-height: 100vh;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 20px;
+  position: fixed;
+  z-index: 99;
+}
+
+.fas {
+  font-size: 2.4rem;
+  z-index: 99;
+  cursor: pointer;
+  color: white;
+}
+
+.fas:hover {
+  color: rgb(255, 102, 0);
+}
+
+
+/* Menu overlay einde */
+
+
+/* Footer */
+
+.footer {
+  position: relative;
+  margin-top: 0px;
+  bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px;
+}
+
+.footer p {
+  font-size: 0.85rem;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+/* Footer einde */
+
+.container-social {
+  display: grid;
+  margin: auto;
+  padding: 100px;
+ 
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.fa:hover{
+    opacity: 0.7;
+}
+.fa-facebook{
+    background-color: #3b5998;
+    color: white;
+}
+.fa-twitter{
+    background-color: #55acee;
+    color: white;
+}
+.fa-google{
+    background-color: #dd4b39;
+    color: white;
+}
+.fa-linkedin{
+    background-color: #007bb5;
+    color: white;
+
+}
+.fa-youtube{
+    background-color: #bb0000;
+    color: white;
+}
+.fa-instagram{
+    background-color: #C13584;
+    color: white;
+
+}
+.fa-pinterest{
+    background-color: #cb2027;
+    color: white;
+}
+.fa-trello{
+    background-color: #125688	;
+    color: white;
+}
+.fa-github {
+    background-color: #333;
+    color: white;
+
+}
+.fa-twitch{
+    background-color: #6441a5;
+    color: white;
+}
+.fa-skype{
+    background-color: #009EDC;
+    color: white;
+
+}
+.fa-vimeo{
+    background-color: #45bbff;
+    color: white;
+}
+.fa-tumblr{
+    background-color: #2c4762;
+    color: white;
+}
+.fa-reddit{
+    background-color: #FF5700;
+    color: white;
+}
+.fa-deviantart{
+    background-color: #4e6252;
+    color: white;
+}
+.fa-quora{
+    background-color: #B92B27;
+    color: white;
+
+}
+.fa-discord{
+    background-color: #7289da;
+    color: white;
+}
+.fa-tiktok{
+    background-color: #430297;
+    color: white;
+
+}
+
+/* Media querries */
+
+@media (max-width: 686px) {
+  form {
+    padding-left: 60px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 570px) {
+  .footer {
+      flex-direction: column;
+      row-gap: 1rem;
+      padding: 20px 0;
+      text-align: center;
+  }
+}
+
+@media screen and (max-width: 750px) and (min-width: 651px) {
+  .list li a {
+    font-size: 1.4rem;
+  }
+
+  .list {
+    height: 30%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .list li {
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .list a {
+    font-size: 1rem;
+  }
+}
+
+/* Media querries einde*/

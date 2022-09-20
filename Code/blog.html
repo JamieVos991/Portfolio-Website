@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Blog</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Css/blog.css">
+
+    <!-- Shortcut icon -->
+    <link rel="shortcut icon" href="../Foto's/Logo.png">
+
+    <!-- Stylesheets -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <input type="checkbox" name="" id="menuBtn">
+    <div class="menu_overlay">
+        <label for="menuBtn">
+            <i class="fas fa-times"></i>
+        </label>
+        <ul class="list">
+            <li onclick="location.href='index.html';"><a>Home</a></li>
+            <li onclick="location.href='skills.html';"><a>Skills</a></li>
+            <li onclick="location.href='blog.html';"><a>Blog</a></li>
+            <li onclick="location.href='contact.html';"><a>Contact</a></li>
+        </ul>
+    </div>
+    <div class="landing_page">
+        <div class="menu">
+            <label for="menuBtn">
+                <i class="fas fa-bars"></i>
+            </label>
+        </div>
+    </div>
+
+    <section class="home" id="home">
+            <div class="home-text contianer">
+                
+                <h2 class="home-title">Jamie's Blog</h2>
+                <span class="home-subtitle">Your source of great content</span>
+            </div>
+          </header>
+    </section>
+
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter='all'>All</span>
+        <span class="filter-item" data-filter='design'>Design</span>
+        <span class="filter-item" data-filter='tech'>Tech</span>
+        <span class="filter-item" data-filter='mobile'>Mobile</span>
+    </div>
+
+    <section class="post container">
+
+
+         <!-- Business development -->
+
+
+         <div class="post-box mobile">
+            <img src="../Foto's/cs.jpg" alt="" class="post-img">
+            <h2 class="category">Mobile</h2>
+            <a href="#" class="post-title">
+                Business development
+            </a>
+            <span class="post-date">8 JUL 2022</span>
+            <p class="post-description">Mijn 4e examen voor school gaat in, en daarvoor moet ik een businessplan schrijven. Mijn idee is dat</p>
+
+            <div class="profile">
+                <img src="../Foto's/a.JPG" alt="" class="profile-img">
+                <span class="profile-name">Jamie Vos</span>
+            </div>
+        </div>
+
+
+        <!-- Interaction design -->
+
+
+        <div class="post-box design" onclick="location.href='Blogs/post-page-ID.html';">
+            <img src="../Foto's/Untitled-4.jpg" alt="" class="post-img">
+            <h2 class="category">Design</h2>
+            <a class="post-title">
+                Interaction design
+            </a>
+            <span class="post-date">17 JUN 2022</span>
+            <p class="post-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laudantium
+                doloremque repellat adipisci impedit iste dolor eum suscipit eaque ex minima temporibus asperiores
+                corporis maiores, quo perferendis et voluptatem ullam.</p>
+
+            <div class="profile">
+                <img src="../Foto's/a.JPG" alt="" class="profile-img">
+                <span class="profile-name">Jamie Vos</span>
+            </div>
+        </div>
+
+
+        <!-- Radicale kunstspeeltuin -->
+
+
+        <div class="post-box tech tech" onclick="location.href='Blogs/post-page-RK.html';">
+            <img src="../Foto's/Design Kamer 1.png" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="#" class="post-title">
+                Radicale kunstspeeltuin
+            </a>
+            <span class="post-date">12 Feb 2022</span>
+            <p class="post-description">Het thema van de afgelopen paar maanden was kunst en cultuur. Wat is kunst tegenwoordig? En welke plek heeft technologie in de kunst? Bezoekers van tentoonstellingen willen steeds meer ondergedompeld, vermaakt en geraakt worden. Naar een ‘gewoon’ kunstwerk kijkt men maar een paar seconden, er moet wat te beleven zijn.</p>
+
+            <div class="profile">
+                <img src="../Foto's/a.JPG" alt="" class="profile-img">
+                <span class="profile-name">Jamie Vos</span>
+            </div>
+        </div>
+
+
+        <!-- Make it Rain  -->
+
+
+        <div class="post-box design" onclick="location.href='Blogs/post-page-MIT.html';">
+            <img src="../Foto's/United_States_one_dollar_bill,_reverse.jpg" alt="" class="post-img">
+            <h2 class="category">Design</h2>
+            <a href="#" class="post-title">
+                Make it rain
+            </a>
+            <span class="post-date">9 JAN 2022</span>
+            <p class="post-description">De schoen is een fashion statement maar laat vooral zien wie we zijn of willen zijn. </p>
+
+            <div class="profile">
+                <img src="../Foto's/a.JPG" alt="" class="profile-img">
+                <span class="profile-name">Jamie Vos</span>
+            </div>
+        </div>
+
+
+        <!-- Arcade Mechanics -->
+
+
+        <div class="post-box tech" onclick="location.href='Blogs/post-page-AM.html';">
+            <img src="../Foto's/Untitled-1.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="#" class="post-title">
+                Arcade Mechanics
+            </a>
+            <span class="post-date">20 DEC 2021</span>
+            <p class="post-description">In het 1e jaar van mijn MBO moesten ik en mijn team maten een spel maken dat gebasseerd is op een arcade spel. Ons leek het leuk en haalbaar om het spel "Space invaders" na te maken.</p>
+
+            <div class="profile">
+                <img src="../Foto's/a.JPG" alt="" class="profile-img">
+                <span class="profile-name">Jamie Vos</span>
+            </div>
+        </div>
+
+
+        <!-- Politie Zuidoost -->
+
+
+        <div class="post-box Design" onclick="location.href='Blogs/post-page.html';">
+            <img src="../Foto's/IMG_1594-2.jpg" alt="" class="post-img">
+            <h2 class="category">Tech</h2>
+            <a href="#" class="post-title">
+                Poltie Zuidoost
+            </a>
+            <span class="post-date">5 Sep 2021</span>
+            <p class="post-description">Het rapt lekker weg, de beat is goed, de teksten niet altijd even verstaanbaar, maar de beelden spreken voor zich. Zoek een willekeurige video op YouTube over drillrap en je ziet rappers duistere en gewelddadige teksten rappen, wapens achter in hun jeans stoppen en openlijk met grote machetes zwaaien tegen een vaak duistere en naargeestige achtergrond.</p>
+
+            <div class="profile">
+                <img src="../Foto's/a.JPG" alt="" class="profile-img">
+                <span class="profile-name">Jamie Vos</span>
+            </div>
+        </div>
+    </section>
+
+    <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+
+    <div class="footer container">
+        <p>&#169; Jamie Vos</p>
+    </div>
+
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="Js/app.js"></script>
+    <script src="Js/blog.js"></script>
+
+</body>
+
+</html>

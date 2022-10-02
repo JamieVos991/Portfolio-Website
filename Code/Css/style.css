@@ -13,6 +13,7 @@ body {
   background-image: repeating-linear-gradient(0deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), repeating-linear-gradient(90deg, rgb(17, 17, 17) 0px, rgb(17, 17, 17) 1px, transparent 1px, transparent 51px), linear-gradient(90deg, hsl(49, 0%, 3%), hsl(49, 0%, 3%));
   font-size: 1rem;
   overflow-x: hidden;
+  cursor: url(../ghost.png), auto;
 }
 
 ::-webkit-scrollbar {
@@ -470,7 +471,7 @@ h1 span {
   filter: grayscale(0%);
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
-  transform: scale(1.05);
+  /* transform: scale(1.01); */
 } 
 
 .card-info {
@@ -478,8 +479,8 @@ h1 span {
   height: 75px;
   width: 100%;
   color: white;
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 19px;
   display: flex;
   bottom: 0;
   position: absolute;

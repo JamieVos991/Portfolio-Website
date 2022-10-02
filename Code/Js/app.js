@@ -1,10 +1,7 @@
 
-<<<<<<< HEAD
 
 // Hamburger Menu 
 
-=======
->>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
 let overlay = document.querySelector(".menu_overlay");
 let open = document.querySelector(".fa-bars");
 let close = document.querySelector(".fa-times");
@@ -20,7 +17,6 @@ overlay.style.transform = "translateY(-110%)";
 });
 
 
-<<<<<<< HEAD
 // Timer
 
 var countDownDate = new Date("Feb 20, 2023 00:00:00").getTime();
@@ -49,6 +45,12 @@ var x = setInterval(function(){
 }, 1000);
 
 
+// Scroll BTN
+
+window.addEventListener('load', (event) => {
+  $(".gotopbtn").css({"display":"none"});
+});
+
 $(document).on("scroll", function() {
     if ($(document).scrollTop() <= 100) {
       $(".gotopbtn").css({"display":"none"});
@@ -57,8 +59,6 @@ $(document).on("scroll", function() {
       $(".gotopbtn").css({"display":"initial"});
     }
   });
-=======
->>>>>>> 1da138ea7872ed21ae9d1ba3d505315da394684c
 
 
 

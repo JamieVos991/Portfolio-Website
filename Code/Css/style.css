@@ -411,6 +411,15 @@ h1 span {
   padding: 64px 24px;
 }
 
+.h1__card {
+  padding: 5rem 0rem 3rem 0rem;
+  font-size: 400%;
+  justify-content: center;
+  display: flex;
+  font-family: sans-serif;
+  color: white;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
